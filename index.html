@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f7f2;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.certificate {
+    background-color: #ffffff;
+    border: 15px solid #f7d88a;
+    padding: 30px;
+    width: 850px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.header h2, .header h1 {
+    text-align: center;
+}
+
+.header p {
+    text-align: center;
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;    
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    width: 200px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.note {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer div {
+    flex: 1;
+}
+
+.footer input[type="text"] {
+    margin-top: 5px;
+}
+    </style>
+    <!-- collapse u table dijelu stajla sluzi da se ne pvii razmak između redaka i stupaca -->
+
+</head>
+<body>
+    <div class="certificate">
+        <div class="header">
+            <h2>BOSNA I HERCEGOVINA<br>FEDERACIJA BOSNE I HERCEGOVINE</h2>
+            <form action="">
+            <p>KANTON:<input type="text"></p>
+            <p>OPĆINA/GRAD:<input type="text"></p>
+            </form>
+            <h1>IZVOD IZ MATIČNE KNJIGE ROĐENIH</h1>
+        </div>
+        <!-- <label for="">U matičnoj knjizi rođenih koja se vodi za mjesto </label> <input type="radio">--> <!--OVO JE NEUSPJELI POKUSAJ-->
+        <form>
+            <table>
+                <tr>
+                    <th>Prezime</th>
+                    <td><input type="text"></td>
+                    <th>Spol</th>
+                    <td><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <th>Ime</th>
+                    <td colspan="4"><input type="text"></td> <!-- colspan je za određivanje duzine prostora za upisivanje -->
+                </tr>
+                <tr>
+                    <th>Datum i vrijeme rođenja</th>
+                    <td colspan="4"><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Mjesto i općina rođenja</th>
+                    <td colspan="4"><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Država rođenja</th>
+                    <td colspan="4"><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>JMBG</th>
+                    <td colspan="4"><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Državljanstvo</th>
+                    <td colspan="4"><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Nacionalnost</th>
+                    <td colspan="4"><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Prebivalište</th>
+                    <td colspan="4"><input type="text"></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Podaci o roditeljima</th>
+                    <th>Otac</th>
+                    <th>Majka</th>
+                </tr>
+                <tr>
+                    <th>Prezime</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Ime</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Djevojačko prezime majke</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>JMBG</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+
+            <p class="note">Ovaj izvod iz matične knjige rođenih nema ograničen rok važenja.<br>
+            Odgovornost za upotrebu izvoda koji ne sadrži posljednje podatke upisane u matičnu knjigu snosi lice koje ga stavi u pravni promet.</p>
+
+            <div class="footer">
+                <div>
+                    <p>Broj:</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Datum:</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Matičar:</p>
+                    <input type="text">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
